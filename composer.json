@@ -1,0 +1,19 @@
+{
+    "name": "umbrella/tag-builder",
+    "description": "TagBuilder is a component to help you to build html tags",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ítalo Lelis",
+            "email": "italolelis@gmail.com"
+        }
+    ],
+    "require": {
+        "easyframework/collections": "v1.1.0"
+    },
+    "autoload": {
+        "psr-0": {
+            "Umbrella\\TagBuilder": "src/"
+        }
+    }
+}

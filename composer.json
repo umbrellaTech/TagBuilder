@@ -9,7 +9,7 @@
         }
     ],
     "require": {
-        "easyframework/collections": "v1.1.1"
+        "easyframework/collections": "v1.2.1"
     },
     "autoload": {
         "psr-0": {

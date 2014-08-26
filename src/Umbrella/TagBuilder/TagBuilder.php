@@ -7,7 +7,7 @@ namespace Umbrella\TagBuilder;
 use Easy\Collections\Dictionary;
 use InvalidArgumentException;
 
-class TagBuilder implements ITagBuilder
+class TagBuilder implements TagBuilderInterface
 {
 
     const ATTRIBUTE_FORMAT = "%s = '%s'";

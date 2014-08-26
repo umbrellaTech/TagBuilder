@@ -4,7 +4,7 @@
 
 namespace Umbrella\TagBuilder;
 
-interface ITagBuilder
+interface TagBuilderInterface
 {
 
     public function getAttributes();

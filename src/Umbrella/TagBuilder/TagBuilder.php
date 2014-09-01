@@ -54,7 +54,7 @@ class TagBuilder implements TagBuilderInterface
      * @param \Easy\Collections\MapInterface  $attributes
      * @return TagBuilder
      */
-    public function setAttributes(\Easy\Collections\MapInterface $attributes)
+    public function setAttributes($attributes)
     {
         $this->attributes = $attributes;
         return $this;

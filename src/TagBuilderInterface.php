@@ -8,8 +8,6 @@ interface TagBuilderInterface
 
     public function getAttributes();
 
-    public function setAttributes($attributes);
-
     public function getInnerHtml();
 
     public function setInnerHtml($innerHtml);

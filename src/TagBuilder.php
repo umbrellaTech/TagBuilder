@@ -34,7 +34,7 @@ class TagBuilder implements TagBuilderInterface
     public function __construct($tagName)
     {
         if (empty($tagName)) {
-            throw new InvalidArgumentException(__("Invalid Argument passed"));
+            throw new InvalidArgumentException(_("Invalid Argument passed"));
         }
         $this->tagName = $tagName;
         $this->attributes = new Dictionary();
@@ -47,17 +47,6 @@ class TagBuilder implements TagBuilderInterface
     public function getAttributes()
     {
         return $this->attributes;
-    }
-
-    /**
-     * Sets the collection of attributes for the tag.
-     * @param \Easy\Collections\MapInterface  $attributes
-     * @return TagBuilder
-     */
-    public function setAttributes($attributes)
-    {
-        $this->attributes = $attributes;
-        return $this;
     }
 
     /**
@@ -102,34 +91,30 @@ class TagBuilder implements TagBuilderInterface
 
     /**
      * Adds the specified CSS class to the tag-builder attributes.
-     * @param type $value
+     * @param string $value
      * @return TagBuilder
      */
     public function addCssClass($value)
     {
-        if ($this->attributes->contains('class')) {
-            $_currentValue = $this->attributes->getItem('class');
-            $this->attributes->set('class', $value + " " + $_currentValue);
-        } else {
-            $this->attributes->set('class', $value);
+        if ($this->attributes->containsKey('class')) {
+            $value .= " " . $this->attributes->get('class');
         }
+
+        $this->attributes->set('class', $value);
+
         return $this;
     }
 
     private function getAttributesString()
     {
-        if (!empty($this->attributes)) {
-            $attributes = array();
-            foreach ($this->attributes as $key => $value) {
-                if ($value === true) {
-                    $value = $key;
-                }
-                $attributes[] = sprintf(self::ATTRIBUTE_FORMAT, $key, $value);
+        $attributes = array();
+        foreach ($this->attributes as $key => $value) {
+            if ($value === true) {
+                $value = $key;
             }
-            return join(' ', $attributes);
-        } else {
-            return null;
+            $attributes[] = sprintf(self::ATTRIBUTE_FORMAT, $key, $value);
         }
+        return join(' ', $attributes);
     }
 
     /**

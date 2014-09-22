@@ -1,7 +1,6 @@
 <?php
 
 // Copyright (c) Umbrella Tech. All rights reserved. See License.txt in the project root for license information.
-
 namespace Umbrella\TagBuilder\Html;
 
 use Umbrella\TagBuilder\TagBuilder;
@@ -28,25 +27,8 @@ class ButtonBuilder
         return $buttonTag->toString(TagRenderMode::SELF_CLOSING);
     }
 
-    public static function submitImage($name, $sourceUrl, array $htmlAttributes = array())
-    {
-        $buttonTag = new TagBuilder("input");
-
-        $buttonTag->mergeAttribute("type", "image");
-
-        if (!empty($name)) {
-            $buttonTag->mergeAttribute("name", $name);
-        }
-
-        if (!empty($sourceUrl)) {
-            $buttonTag->mergeAttribute("src", $sourceUrl);
-        }
-
-        $buttonTag->mergeAttributes($htmlAttributes);
-        return $buttonTag->toString(TagRenderMode::SELF_CLOSING);
-    }
-
-    public static function button($name, $buttonText, $type = HtmlButtonType::SUBMIT, $onClickMethod = null, $htmlAttributes = array())
+    public static function button($name, $buttonText, $type = HtmlButtonType::SUBMIT, $onClickMethod = null,
+                                  $htmlAttributes = array())
     {
         $buttonTag = new TagBuilder("button");
 
@@ -64,5 +46,4 @@ class ButtonBuilder
 
         return $buttonTag->toString(TagRenderMode::NORMAL);
     }
-
 }

@@ -11,6 +11,9 @@
     "require": {
         "easyframework/collections": "~3.0"
     },
+    "require-dev": {
+        "phpunit/phpunit": "~4.2"
+    },
     "autoload": {
         "psr-4": {
             "Umbrella\\TagBuilder\\": "src/"

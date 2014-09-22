@@ -1,5 +1,10 @@
-TagBuilder
-==========
+# TagBuilder
+
+[![Build Status](http://img.shields.io/travis/umbrellaTech/TagBuilder.svg?style=flat-square)](https://travis-ci.org/umbrellaTech/TagBuilder)
+[![Scrutinizer Code Quality](http://img.shields.io/scrutinizer/g/umbrellaTech/TagBuilder.svg?style=flat-square)](https://scrutinizer-ci.com/g/umbrellaTech/TagBuilder/)
+[![Code Coverage](http://img.shields.io/scrutinizer/coverage/g/umbrellaTech/TagBuilder.svg?style=flat-square)](https://scrutinizer-ci.com/g/umbrellaTech/TagBuilder/)
+[![Latest Stable Version](http://img.shields.io/packagist/v/umbrella/tag-builder.svg?style=flat-square)](https://packagist.org/packages/umbrella/tag-builder)
+[![Downloads](https://img.shields.io/packagist/dt/umbrella/tag-builder.svg?style=flat-square)](https://packagist.org/packages/umbrella/tag-builder)
 
 [![SensioLabsInsight](https://insight.sensiolabs.com/projects/f1f2ba72-484b-4880-a64e-19dff0f94adb/small.png)](https://insight.sensiolabs.com/projects/f1f2ba72-484b-4880-a64e-19dff0f94adb)
 

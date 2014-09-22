@@ -12,8 +12,13 @@
         "easyframework/collections": "~3.0"
     },
     "autoload": {
-        "psr-0": {
-            "Umbrella\\TagBuilder": "src/"
+        "psr-4": {
+            "Umbrella\\TagBuilder\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Umbrella\\Tests\\TagBuilder\\": "tests/"
         }
     }
 }

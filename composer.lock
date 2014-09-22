@@ -1,0 +1,122 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "7dee0786996ac8d04f3ab25f91ce70ce",
+    "packages": [
+        {
+            "name": "easyframework/collections",
+            "version": "v3.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/LellysInformatica/collections.git",
+                "reference": "53012e2adbf6bf311d4bbcade5e57456d369eaf4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/LellysInformatica/collections/zipball/53012e2adbf6bf311d4bbcade5e57456d369eaf4",
+                "reference": "53012e2adbf6bf311d4bbcade5e57456d369eaf4",
+                "shasum": ""
+            },
+            "require": {
+                "easyframework/generics": "2.0.*"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.1.*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.2-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ítalo Lelis de Vietro",
+                    "email": "italolelis@lellysinformatica.com"
+                }
+            ],
+            "description": "Easy Framework Collection Component",
+            "homepage": "https://github.com/LellysInformatica/collections",
+            "keywords": [
+                "collection",
+                "easy",
+                "framework",
+                "generics"
+            ],
+            "time": "2014-09-08 18:31:25"
+        },
+        {
+            "name": "easyframework/generics",
+            "version": "v2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/LellysInformatica/generics.git",
+                "reference": "f7e8322195d6b5a6c77095afe5943b783bcbe851"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/LellysInformatica/generics/zipball/f7e8322195d6b5a6c77095afe5943b783bcbe851",
+                "reference": "f7e8322195d6b5a6c77095afe5943b783bcbe851",
+                "shasum": ""
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ítalo Lelis de Vietro",
+                    "email": "italolelis@lellysinformatica.com"
+                }
+            ],
+            "description": "Easy Framework Generics Component",
+            "homepage": "http://easyframework.net/",
+            "keywords": [
+                "easy",
+                "framework",
+                "generics"
+            ],
+            "time": "2014-08-26 19:03:28"
+        }
+    ],
+    "packages-dev": [
+
+    ],
+    "aliases": [
+
+    ],
+    "minimum-stability": "stable",
+    "stability-flags": [
+
+    ],
+    "prefer-stable": false,
+    "platform": [
+
+    ],
+    "platform-dev": [
+
+    ]
+}

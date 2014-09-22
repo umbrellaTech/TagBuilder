@@ -8,17 +8,17 @@ What is it?
 
 TagBuilder is a component to help you to build html tags. But why use it to render tags instead of just write them? Well the tag builder sets a pattern of how we need to handle html elements, this avoids html errors and copy and paste code.
 
-Installation
-----------
+## Install
 
-```shell
-  require: { "umbrella/tag-builder": "~1.0" }
-  
-  $ composer install
-``` 
+``` json
+{
+    "require": {
+        "umbrella/tag-builder": "~1.0"
+    }
+}
+```
 
-Usage
-----------
+## Usage
 
 Build a link tag.
 
@@ -57,3 +57,23 @@ We have many render modes available like:
 \Umbrella\TagBuilder\TagRenderMode::SELF_CLOSING
 
 ```
+
+## Testing
+
+``` bash
+$ phpunit
+```
+
+## Contributing
+
+Please see [CONTRIBUTING](https://github.com/umbrellaTech/TagBuilder/blob/master/CONTRIBUTING.md) for details.
+
+## Credits
+
+- [italolelis](https://github.com/italolelis)
+- [All Contributors](https://github.com/umbrellaTech/TagBuilder/contributors)
+
+
+## License
+
+The MIT License (MIT). Please see [License File](https://github.com/umbrellaTech/TagBuilder/blob/master/LICENSE) for more information.
